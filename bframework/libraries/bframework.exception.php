@@ -12,7 +12,8 @@
  
 /*
 * Bframework exception setup
-* bframework_register_exception(<message>), <message>
+* bframework_register_exception(<message>) 
+* Uses its works only by throw a new exception 
 */  
 function bframework_register_exception($exception){
 if(isset($exception)){
