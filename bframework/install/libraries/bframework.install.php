@@ -106,35 +106,37 @@ include(bframework_installation('template').'requirements.php');
 /**
 * Bframework installation configuration write
 */
+function bframework_create_settingsfile($params) {
+		$templateFile = bframework_installation('engine')."settings.example.php";
+		$template = file_get_contents($templateFile);
+		if (!$template) {
+			return FALSE;
+		}
+
+		foreach ($params as $k => $v) {
+			$template = str_replace("<<" . $k . ">>", $v, $template);
+		}
+
+		$settingsFilename = bframework_installation('engine')."settings.php";
+		$result = file_put_contents($settingsFilename, $template);
+		if (!$result) {
+		return FALSE;
+		}
+
+		return TRUE;
+	}
+/**
+* Bframework installation configuration write
+*/
 function bframework_installation_write(){
 if(isset($_POST["siteurl"]) && !empty($_POST["siteurl"])){
-$url = $_POST["siteurl"];
-} else { $url = false; }
-
-$data = '<?php
-/**
- * Buddyexpress Framework Core
- *
- * @package   Bframework
- * @author    Buddyexpress Core Team <admin@buddyexpress.net
- * @copyright 2012 BUDDYEXPRESS.
- * @license   Buddyexpress Public License http://www.buddyexpress.net/Licences/bpl/ 
- * @link      http://bserver.buddyexpress.net
- * @Contributors http://www.buddyexpress.net/bframework/contributors.b
- */
-'; 
-$data .= '$Bframework->baseurl = '."'".$url."';
-"; 
-$data .= '$Bframework->sitebron = '.time().';
-'; 
-
-$data .= "ini_set('display_errors','off');
-"; 
-
-if(isset($_POST["siteurl"]) && !empty($_POST["siteurl"])){
-file_put_contents(bframework_installation('engine').'settings.php',$data);
+bframework_create_settingsfile(array(
+               'site_url' => $_POST["siteurl"],
+			   'display_errors' => 'off',
+			   'siteborn_time' => time()   
+			   ));
 header('Location: ?step=2');
-  }
+    }
 }
 /**
 * Bframework installation self url get
