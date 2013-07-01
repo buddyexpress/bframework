@@ -13,9 +13,10 @@
 * Register a return able include handler
 * @uses bframework_include(<file>);
 */  
-function bframework_include($file = ''){
+function bframework_include($file = '', $arg = array()){
 if(isset($file) && is_file($file)){
    ob_start();
+   $args = $arg;
    include_once($file);
    $contents = ob_get_clean();
    return $contents;
@@ -25,8 +26,8 @@ if(isset($file) && is_file($file)){
 * Register a view handler
 * @uses bframework_view(<path>, <file>);
 */  
-function bframework_view($path = ''){
+function bframework_view($path = '', $arg = array()){
 if(isset($path) && !empty($path)){
-   return bframework_include($path.'.php');
+   return bframework_include($path.'.php', $arg);
   }
 }  
