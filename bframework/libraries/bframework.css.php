@@ -21,7 +21,7 @@ if(isset($file)){bframework_page_handler(array('handler' => 'css', 'file' => $fi
 * Register a application  css
 * @uses bframework_resgiser_core_css(<file>);
 */ 
-function bframework_resgiser_css($file){
+function bframework_resgister_css($file){
 if(isset($file)){bframework_page_handler(array('handler' => 'app_css', 'file' => $file));}
 }
 /*
