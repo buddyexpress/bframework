@@ -16,17 +16,17 @@
 * like http://www.mywebsite.com <= this is not accepted
 * url like http://www.mywebsite.com/ <= this is accepted
 */
-$Bframework->baseurl = '<site url>';
+$Bframework->baseurl = '<<site_url>>';
 
 /* 
 * Bframework display errors or not, 
 * Enter on or off
 * Example ini_set('display_errors','off'); 
 */
-ini_set('display_errors','<on or off>'); 
+ini_set('display_errors','<<display_errors>>'); 
 
 /* 
 * Bframework need bframework date on your websserver, 
 * Example 1355656882, this is auto generated upon installation
 */
-$Bframework->sitebron = '<time>';
+$Bframework->sitebron = '<<siteborn_time>>';
