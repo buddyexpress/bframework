@@ -13,6 +13,10 @@ Options +FollowSymLinks
 
 <IfModule mod_rewrite.c>
 RewriteEngine on
+
 RewriteRule ^page\/([A-Za-z0-9\_\-]+)$ application/start.php?bframework=$1&%{QUERY_STRING}
+
+RewriteRule ^action\/([A-Za-z0-9\_\-]+)$ application/start.php?action=$1&%{QUERY_STRING}
+
 RewriteRule    ^js.js$ application/js/js.php
 </IfModule>
