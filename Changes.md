@@ -1,7 +1,9 @@
-Bframework 1.0.2-development 02 Feb 2013
+Bframework 1.0.3-development 01 July 2013
 
-Bugfixes:
+API Changes:
 
-* Installation api changed.
+* Added array support in bframework_view.
 
-* Fixed a exceptions css bug.
+* Added exception classes.
+
+* Added action handler.
