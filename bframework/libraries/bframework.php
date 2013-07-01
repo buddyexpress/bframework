@@ -22,13 +22,12 @@ die('library "bframework.paths.php" was not found all libraries are required.');
 }
 bframework_paths();
 
-$libs = array('bframework.exception.php','bframework.datetime.php','bframework.curl.php','bframework.include.php','bframework.args.php','bframework.html.elements.php','bframework.url.php','bramewrok.pagehandler.php','bframework.css.php','bframework.js.php','bframework.languages.php','bframework.application.php','bframework.page.php','bframework.forms.php','bframework.mail.php');
+$libs = array('bframework.exception.php','bframework.datetime.php','bframework.curl.php','bframework.include.php','bframework.args.php','bframework.html.elements.php','bframework.url.php','bramewrok.pagehandler.php','bframework.css.php','bframework.js.php','bframework.languages.php','bframework.application.php','bframework.page.php','bframework.forms.php','bframework.mail.php','bframework.mysql.php','bframework.actions.php');
+$classes = array('bframework.paths.php','bframework.GetException.php','bframework.AppException.php','bframework.CallException.php','bframework.ClassNotFoundException.php','bframework.DatabaseException.php','bframework.InstallationException.php');
 
 foreach($libs as $lib){
 include($lib);
 }
-
-$classes = array('bframework.paths.php');
 foreach($classes as $class){
 include(bframework_get_classes_path().$class);
 }
