@@ -1,5 +1,0 @@
-Bframework 1.0.1 29 December 2012
-
-* Settings file aready exist's
-* Wrong version in version.php
-* Updated ChangeLog
