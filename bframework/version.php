@@ -10,5 +10,5 @@
  * @Contributors http://www.buddyexpress.net/bframework/contributors.b
  */
  
-$BframeworkVersion = '1.0.1';
-$BframeworkRelease = '29122012';
+$BframeworkVersion = '1.0.3-dev';
+$BframeworkRelease = '7012013';
