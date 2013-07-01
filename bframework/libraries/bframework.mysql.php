@@ -10,7 +10,3 @@
  * @Contributors http://www.buddyexpress.net/bframework/contributors.b
  */
  
-/**
-* @todo support mysql lib in 1.0.1 release
-**/
-
