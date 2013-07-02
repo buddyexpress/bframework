@@ -6,7 +6,7 @@
  * @subpackage my application 
  * @author    Buddyexpress Core Team <admin@buddyexpress.net
  * @copyright 2012 BUDDYEXPRESS.
- * @ApplicationCopyright < Your Copyrights’ >
+ * @ApplicationCopyright < Your Copyrightsï¿½ >
  * @license   Buddyexpress Public License http://www.buddyexpress.net/Licences/bpl/ 
  * @ApplicationLicense < Your License >
  * @link      http://www.buddyexpress.net
