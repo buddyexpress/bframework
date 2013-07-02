@@ -6,7 +6,7 @@
  * @subpackage my application 
  * @author    Buddyexpress Core Team <admin@buddyexpress.net
  * @copyright 2012 BUDDYEXPRESS.
- * @ApplicationCopyright < Your Copyrights’ >
+ * @ApplicationCopyright < Your Copyrightsï¿½ >
  * @license   Buddyexpress Public License http://www.buddyexpress.net/Licences/bpl/ 
  * @ApplicationLicense < Your License >
  * @link      http://www.buddyexpress.net
@@ -20,7 +20,7 @@ function mycustomfunction(){
 }
 /* My Custom Functions END */
 
-bframework_resgiser_css('css.php');
+bframework_resgister_css('css.php');
 /* This is default index page, you can change the contents in template/index.php */
 bframework_page_handler(array('handler' => 'index', 'file' => bframework_get_approot_path().'pages/index.php'));
 
