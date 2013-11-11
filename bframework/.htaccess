@@ -7,7 +7,7 @@
  deny from all
 </Files>
 
-DirectoryIndex application/start.php?bframework=index
+DirectoryIndex buddyexpress.php
 Options -Indexes
 Options +FollowSymLinks
 
