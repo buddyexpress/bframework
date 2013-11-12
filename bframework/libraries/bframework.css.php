@@ -14,14 +14,14 @@
 * Register a core css
 * @uses bframework_resgiser_core_css(<file>);
 */ 
-function bframework_resgiser_core_css($file){
+function bframework_register_core_css($file){
 if(isset($file)){bframework_page_handler(array('handler' => 'css', 'file' => $file));}
 }
 /*
 * Register a application  css
 * @uses bframework_resgiser_core_css(<file>);
 */ 
-function bframework_resgister_css($file){
+function bframework_register_css($file){
 if(isset($file)){bframework_page_handler(array('handler' => 'app_css', 'file' => $file));}
 }
 /*
