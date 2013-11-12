@@ -33,9 +33,9 @@ $default_css = array(
 			'errors' => bframework_get_base_path().'views/css/errors/errors.php'
 			);
 if(!is_file($default_css['errors_app'])){
-bframework_resgiser_core_css($default_css['errors']);
+bframework_register_core_css($default_css['errors']);
 } else {
-bframework_resgiser_core_css($default_css['errors_app']);
+bframework_register_core_css($default_css['errors_app']);
   }
 }  
 /*
