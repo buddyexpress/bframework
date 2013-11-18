@@ -15,7 +15,7 @@
 */  
 function bframework_form($params = array()){
 if(isset($params['body'])){ $body = $params['body']; } else { $body = ''; }
-if(isset($params['attributes'])){ $attr = $params['attributes']; } else { $attr = ''; }
+if(isset($params['attributes'])){ $attr = $params['attributes']; } else { $attr = array(); }
 $form = '<form '.bframework_args($attr).'>  <fieldset>'.$body.'</fieldset></form>';
 return $form; 
 }
